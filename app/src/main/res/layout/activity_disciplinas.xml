@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Disciplinas"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Disciplina"
+
+                />
+            <EditText
+                android:id="@+id/etDisciplina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+    <TableRow>
+            <Button
+                android:onClick="btCadastrarOnClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                />
+            <Button
+                android:onClick="btVoltarOnClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voltar"
+                />
+        <Button
+            android:onClick="btLimparOnClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excluir Disciplinas"
+            />
+    </TableRow>
+    </TableLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Disciplinas já Cadastradas:"
+                />
+
+            <TextView
+                android:id="@+id/tvListar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+
+
+
+</LinearLayout>
